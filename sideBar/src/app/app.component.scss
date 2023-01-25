@@ -1,3 +1,24 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+  main{
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  mat-card, app-photos{
+    margin: auto;
+    width: 35%;
+    display: block;
+    margin-top: 2rem;
+  }
+  mat-form-field, input{
+    width: 100%;
+  }
+  mat-select{
+    margin-bottom: 2rem;
+  }
+  button{
+    display: block;
+    width: 100%;
+  }

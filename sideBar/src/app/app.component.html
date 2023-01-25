@@ -1,5 +1,5 @@
 <p>
-  <mat-toolbar c>
+  <mat-toolbar color="accent">
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
@@ -15,6 +15,33 @@
   </mat-toolbar>
 </p>
 
-<button mat-button color="warn">
-  click!!
-</button>
+
+<main>
+  <mat-card>
+    <mat-card-content>
+      <img width="120px" src="https://angular.io/assets/images/logos/angular/angular.svg" alt="">
+      <mat-form-field color="accent">
+        <form action="">
+          <input type="text" matInput placeholder="title" #title>
+        </form>
+      </mat-form-field>
+
+      <mat-select placeholder="Album Id" #albumId>
+        <mat-option *ngFor="let id of albumsId" value="id">
+          {{ id }}
+        </mat-option>
+      </mat-select>
+
+      <mat-form-field color="accent">
+        <input type="text" matInput placeholder="URL" #url>
+      </mat-form-field>
+
+      <button mat-button mat-flat-button color="accent">
+        save
+      </button>
+
+    </mat-card-content>
+  </mat-card>
+
+  <app-photos></app-photos>
+</main>
